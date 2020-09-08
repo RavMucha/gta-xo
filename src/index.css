@@ -93,7 +93,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 100%;
 }
 
@@ -179,7 +179,9 @@ body {
   }
 
   #cop {
-    display: none;
+    bottom: 1px;
+    right: 1px;
+    height: 30px;
   }
   
   .game-info {
