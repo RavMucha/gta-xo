@@ -36,7 +36,7 @@ function Game() {
   const [isXNext, setIsXNext] = useState(true);
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
-  const clan = winner == "X" ? "Zaibatsu" : "Yakuza";
+  const clan = winner === "X" ? "Zaibatsu" : "Yakuza";
   function Nav() {
     return (
       <div className="topnav">
@@ -113,7 +113,7 @@ function Game() {
       document.getElementById("cop").style.filter = "opacity(0.9) grayscale(10%) brightness(90%)";
       return <div><b>Draw!</b> <span style={{fontSize: "0.9em"}}>&nbsp;Play again &#187;</span></div>;
     } else {
-      return nextSymbol == "X"
+      return nextSymbol === "X"
         ? "Next player: ZAIBATSU - X"
         : "Next player: YAKUZA - O";
     }
