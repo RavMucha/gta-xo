@@ -70,7 +70,7 @@ body {
   color: rgb(255, 171, 0);
   background: #222;
   opacity: 0.9;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid #f2f2f2;
   float: left;
   font-size: 100px;
@@ -156,7 +156,7 @@ body {
   .game-info {
     font-size: 12px;
     margin: 5px;
-    color: rgb(255, 102, 0);
+    color: rgb(255, 108, 10);
   }
 
   .topnav a,
@@ -167,6 +167,7 @@ body {
 
 .square {
   font-size: 90px;
+  border-radius: 10px;
   line-height: 90px;
   height: 100px;
   width: 100px;
