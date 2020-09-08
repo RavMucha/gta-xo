@@ -41,7 +41,11 @@ function Game() {
     return (
       <div className="topnav">
         <Logo></Logo>
-        <a href="https://rafal-mucha.online/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://rafal-mucha.online/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Contact Me
         </a>
         <div>{renderRestartButton()}</div>
@@ -67,7 +71,8 @@ function Game() {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
           playSound(startAudio);
-          document.getElementById("cop").style.filter = "opacity(0.1) grayscale(50%) brightness(10%)";
+          document.getElementById("cop").style.filter =
+            "opacity(0.1) grayscale(50%) brightness(10%)";
         }}
       />
     );
@@ -110,8 +115,14 @@ function Game() {
       );
     } else if (isBoardFull(squares)) {
       playSound(drawAudio);
-      document.getElementById("cop").style.filter = "opacity(0.9) grayscale(10%) brightness(90%)";
-      return <div><b>Draw!</b> <span style={{fontSize: "0.9em"}}>&nbsp;Play again &#187;</span></div>;
+      document.getElementById("cop").style.filter =
+        "opacity(0.9) grayscale(10%) brightness(90%)";
+      return (
+        <div>
+          <b>Draw!</b>{" "}
+          <span style={{ fontSize: "0.9em" }}>&nbsp;Play again &#187;</span>
+        </div>
+      );
     } else {
       return nextSymbol === "X"
         ? "Next player: ZAIBATSU - X"
