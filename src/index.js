@@ -25,7 +25,6 @@ function Square({ value, onClick }) {
 }
 
 function Logo() {
-  playSound(startAudio);
   return <img className="lgo" src={logo} alt="logo" />;
 }
 function Cop() {
@@ -42,7 +41,7 @@ function Game() {
     return (
       <div className="topnav">
         <Logo></Logo>
-        <a href="https://rafal-mucha.online/" target="_blank">
+        <a href="https://rafal-mucha.online/" target="_blank" rel="noopener noreferrer">
           Contact Me
         </a>
         <div>{renderRestartButton()}</div>
@@ -53,7 +52,8 @@ function Game() {
 
   function Restart({ onClick }) {
     return (
-      <a className="restart" onClick={onClick}>
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
+      <a href="#" className="restart" onClick={onClick}>
         Play again
       </a>
     );
@@ -66,6 +66,7 @@ function Game() {
         onClick={() => {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
+          playSound(startAudio);
           document.getElementById("cop").style.filter = "opacity(0.6) grayscale(50%) brightness(20%)";
         }}
       />
