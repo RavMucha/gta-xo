@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Sound from "react-sound";
 import logo from "./Assets/LOGO.jpg";
 import cop from "./Assets/Cop.png";
 import winLogo from "./Assets/WINFRENZY.jpg";
