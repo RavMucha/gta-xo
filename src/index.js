@@ -15,7 +15,6 @@ const drawAudio = new Audio(draw);
 const playSound = (audioFile) => {
   audioFile.play();
 };
-playSound(startAudio);
 
 function Square({ value, onClick }) {
   return (
@@ -26,6 +25,7 @@ function Square({ value, onClick }) {
 }
 
 function Logo() {
+  playSound(startAudio);
   return <img className="lgo" src={logo} alt="logo" />;
 }
 function Cop() {
