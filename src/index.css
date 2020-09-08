@@ -68,8 +68,8 @@ body {
   color: rgb(255, 171, 0);
   background: #222;
   opacity: 0.9;
-  border-radius: 2px;
-  border: 2px solid #dde;
+  border-radius: 10px;
+  border: 2px solid #f2f2f2;
   float: left;
   font-size: 100px;
   font-weight: bold;
