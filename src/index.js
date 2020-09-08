@@ -67,7 +67,7 @@ function Game() {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
           playSound(startAudio);
-          document.getElementById("cop").style.filter = "opacity(0.6) grayscale(50%) brightness(20%)";
+          document.getElementById("cop").style.filter = "opacity(0.1) grayscale(50%) brightness(10%)";
         }}
       />
     );
