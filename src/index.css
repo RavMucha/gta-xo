@@ -180,9 +180,9 @@ body {
   }
 
   #cop {
-    bottom: 1px;
-    right: 1px;
-    height: 30px;
+    bottom: 3px;
+    right: 3px;
+    height: 40px;
   }
   
   .game-info {
