@@ -13,9 +13,18 @@ body {
   height: 100vh;
 }
 
-.darkMode {
+.whiteMode {
   filter: invert(100%) hue-rotate(180deg);
   background: #e9e9e9;
+}
+
+body.whiteMode {
+background-image: url("./Assets/Liberty.png");
+background-position: bottom left;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: contain;
+opacity: 0.9;
 }
 
 .board-row:after {

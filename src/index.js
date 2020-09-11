@@ -6,13 +6,13 @@ import winLogo from "./Assets/WINFRENZY.jpg";
 import start from "./Assets/Gta2_Respect.mp3";
 import win from "./Assets/Gta2_Frenzy.mp3";
 import draw from "./Assets/GTA2_WASTED.mp3";
+import molotov from "./Assets/GTA2_molotov.mp3";
 import "./index.css";
 
 const startAudio = new Audio(start);
 const winAudio = new Audio(win);
 const drawAudio = new Audio(draw);
-
-// this.state = { isDark: false };
+const whiteAudio = new Audio(molotov);
 
 const playSound = (audioFile) => {
   audioFile.play();
@@ -41,8 +41,11 @@ function Game() {
   const clan = winner === "X" ? "Zaibatsu" : "Yakuza";
 
   function Dark() {
-    document.querySelector("body").classList.toggle("darkMode");
-    document.getElementById("cop").classList.toggle("darkMode");
+    document.querySelector("body").classList.toggle("whiteMode");
+    document.getElementById("cop").classList.toggle("whiteMode");
+    if(document.querySelector("body").classList.contains("whiteMode")) {
+      playSound(whiteAudio);
+    }
   }
 
   function Nav() {
@@ -188,7 +191,6 @@ function calculateWinner(squares) {
     [3, 7, 11, 15],
     [3, 6, 9, 12],
   ];
-  // go over all possibly winning lines and check if they consist of only X's/only O's
   for (let i = 0; i < possibleLines.length; i++) {
     const [a, b, c, d] = possibleLines[i];
     if (
