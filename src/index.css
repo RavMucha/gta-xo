@@ -19,12 +19,12 @@ body {
 }
 
 body.whiteMode {
-background-image: url("./Assets/Liberty.png");
-background-position: bottom left;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: contain;
-opacity: 0.9;
+  background-image: url("./Assets/Liberty.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  opacity: 0.9;
 }
 
 .board-row:after {
@@ -165,7 +165,8 @@ opacity: 0.9;
 }
 
 .topnav a:hover,
-.restart-button:hover, abbr:hover {
+.restart-button:hover,
+abbr:hover {
   background-color: rgb(255, 171, 0);
   cursor: pointer;
   font-weight: 600;
@@ -177,7 +178,7 @@ opacity: 0.9;
     margin: 3px;
     height: 15px;
   }
-  
+
   .game-info {
     font-size: 12px;
     margin: 5px;
@@ -186,28 +187,32 @@ opacity: 0.9;
   }
 
   .topnav a,
-.restart-button {
-  padding: 5px 10px;
-  font-size: 12px;
-}
+  .restart-button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 
-.topnav abbr {
-  padding: 4px 8px;
-  font-size: 11px;
-}
+  .topnav abbr {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
 
-.square {
-  font-size: 90px;
-  border-radius: 7px;
-  line-height: 90px;
-  height: 100px;
-  width: 100px;
-}
+  .square {
+    font-size: 90px;
+    border-radius: 7px;
+    line-height: 90px;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 @media only screen and (max-width: 790px) {
   .lgo {
     display: none;
+  }
+
+  body.whiteMode {
+    background-size: 15%;
   }
 
   #cop {
@@ -216,7 +221,6 @@ opacity: 0.9;
     height: 40px;
   }
 
-  
   .game-info {
     font-size: 11px;
     padding: 0;
@@ -224,21 +228,21 @@ opacity: 0.9;
   }
 
   .topnav a,
-.restart-button {
-  font-size: 11px;
-  padding: 5px;
-}
+  .restart-button {
+    font-size: 11px;
+    padding: 5px;
+  }
 
-.topnav abbr {
-  padding: 3px 6px;
-}
+  .topnav abbr {
+    padding: 3px 6px;
+  }
 
-.square {
-  background: #333;
-  border-radius: 10px;
-  font-size: 70px;
-  line-height: 70px;
-  height: 80px;
-  width: 80px;
-}
+  .square {
+    background: #333;
+    border-radius: 10px;
+    font-size: 70px;
+    line-height: 70px;
+    height: 80px;
+    width: 80px;
+  }
 }

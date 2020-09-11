@@ -43,7 +43,7 @@ function Game() {
   function Dark() {
     document.querySelector("body").classList.toggle("whiteMode");
     document.getElementById("cop").classList.toggle("whiteMode");
-    if(document.querySelector("body").classList.contains("whiteMode")) {
+    if (document.querySelector("body").classList.contains("whiteMode")) {
       playSound(whiteAudio);
     }
   }
@@ -52,7 +52,9 @@ function Game() {
     return (
       <div className="topnav">
         <Logo></Logo>
-        <abbr title="Toggle dark mode" onClick={Dark}>&#9775;</abbr>
+        <abbr title="Toggle dark mode" onClick={Dark}>
+          &#9775;
+        </abbr>
         <a
           href="https://rafal-mucha.online/"
           target="_blank"
