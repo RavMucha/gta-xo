@@ -211,14 +211,8 @@ abbr:hover {
     display: none;
   }
 
-  body.whiteMode {
-    background-size: 55px;
-  }
-
   #cop {
-    bottom: 3px;
-    right: 3px;
-    height: 40px;
+    height: 45px;
   }
 
   .game-info {
@@ -244,5 +238,9 @@ abbr:hover {
     line-height: 70px;
     height: 80px;
     width: 80px;
+  }
+
+  body.whiteMode .square {
+    opacity: 0.7;
   }
 }
