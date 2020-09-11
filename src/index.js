@@ -12,6 +12,8 @@ const startAudio = new Audio(start);
 const winAudio = new Audio(win);
 const drawAudio = new Audio(draw);
 
+// this.state = { isDark: false };
+
 const playSound = (audioFile) => {
   audioFile.play();
 };
@@ -37,10 +39,17 @@ function Game() {
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
   const clan = winner === "X" ? "Zaibatsu" : "Yakuza";
+
+  function Dark() {
+    document.querySelector("body").classList.toggle("darkMode");
+    document.getElementById("cop").classList.toggle("darkMode");
+  }
+
   function Nav() {
     return (
       <div className="topnav">
         <Logo></Logo>
+        <abbr title="Toggle dark mode" onClick={Dark}>&#9775;</abbr>
         <a
           href="https://rafal-mucha.online/"
           target="_blank"
@@ -71,8 +80,7 @@ function Game() {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
           playSound(startAudio);
-          document.getElementById("cop").style.filter =
-            "opacity(0.1) grayscale(50%) brightness(10%)";
+          document.getElementById("cop").style.opacity = 0.01;
         }}
       />
     );
@@ -115,8 +123,7 @@ function Game() {
       );
     } else if (isBoardFull(squares)) {
       playSound(drawAudio);
-      document.getElementById("cop").style.filter =
-        "opacity(0.9) grayscale(10%) brightness(90%)";
+      document.getElementById("cop").style.opacity = 0.9;
       return (
         <div>
           <b>Draw!</b>{" "}
