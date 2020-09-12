@@ -22,7 +22,6 @@ body.whiteMode {
   background-image: url("./Assets/Liberty.png");
   background-position: top left;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   opacity: 0.9;
 }
 
