@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd4e8f85.chunk.css",
+    "main.css": "/static/css/main.1565437a.chunk.css",
     "main.js": "/static/js/main.03c75219.chunk.js",
     "main.js.map": "/static/js/main.03c75219.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cedb3877.js",
@@ -8,11 +8,11 @@
     "static/js/2.c58ec597.chunk.js": "/static/js/2.c58ec597.chunk.js",
     "static/js/2.c58ec597.chunk.js.map": "/static/js/2.c58ec597.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6173c1fb10b46f70e57411df4f91b867.js": "/precache-manifest.6173c1fb10b46f70e57411df4f91b867.js",
+    "precache-manifest.8e467af1d1e34921b615dc09db0214d7.js": "/precache-manifest.8e467af1d1e34921b615dc09db0214d7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.cd4e8f85.chunk.css.map": "/static/css/main.cd4e8f85.chunk.css.map",
+    "static/css/main.1565437a.chunk.css.map": "/static/css/main.1565437a.chunk.css.map",
     "static/js/2.c58ec597.chunk.js.LICENSE.txt": "/static/js/2.c58ec597.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/Liberty.1479cc6d.png",
+    "static/media/index.css": "/static/media/Liberty.63af77aa.png",
     "static/media/GTA2_WASTED.mp3": "/static/media/GTA2_WASTED.e658420e.mp3",
     "static/media/GTA2_molotov.mp3": "/static/media/GTA2_molotov.07b1a2f3.mp3",
     "static/media/Gta2_Frenzy.mp3": "/static/media/Gta2_Frenzy.38d9f096.mp3",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.cedb3877.js",
     "static/js/2.c58ec597.chunk.js",
-    "static/css/main.cd4e8f85.chunk.css",
+    "static/css/main.1565437a.chunk.css",
     "static/js/main.03c75219.chunk.js"
   ]
 }
