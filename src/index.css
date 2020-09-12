@@ -22,10 +22,7 @@ body.whiteMode {
   background-image: url("./Assets/Liberty.png");
   background-position: top left;
   background-repeat: no-repeat;
-}
-
-body.whiteMode #cop {
-  bottom: 25px;
+  height: 90vh;
 }
 
 .board-row:after {
