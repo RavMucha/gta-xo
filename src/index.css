@@ -19,9 +19,6 @@ body {
 }
 
 body.whiteMode {
-  background-image: url("./Assets/Liberty.png");
-  background-position: top left;
-  background-repeat: no-repeat;
   opacity: 0.9;
 }
 
