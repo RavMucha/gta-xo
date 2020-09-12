@@ -24,6 +24,10 @@ body.whiteMode {
   background-repeat: no-repeat;
 }
 
+body.whiteMode #cop {
+  bottom: 25px;
+}
+
 .board-row:after {
   display: table;
 }
