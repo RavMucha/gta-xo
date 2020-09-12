@@ -20,10 +20,9 @@ body {
 
 body.whiteMode {
   background-image: url("./Assets/Liberty.png");
-  background-position: bottom left;
+  background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
   opacity: 0.9;
 }
 
