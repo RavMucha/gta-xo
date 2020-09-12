@@ -172,8 +172,8 @@ function Game() {
             {renderSquare(15)}
           </div>
         </div>
+        <Cop></Cop>
       </div>
-      <Cop></Cop>
     </div>
   );
 }

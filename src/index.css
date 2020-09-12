@@ -19,7 +19,9 @@ body {
 }
 
 body.whiteMode {
-  opacity: 0.9;
+  background-image: url("./Assets/Liberty.png");
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 .board-row:after {
