@@ -18,14 +18,6 @@ const playSound = (audioFile) => {
   audioFile.play();
 };
 
-function Square({ value, onClick }) {
-  return (
-    <button className="square" onClick={onClick}>
-      {value}
-    </button>
-  );
-}
-
 function Logo() {
   return <img className="lgo" src={logo} alt="logo" />;
 }
@@ -38,7 +30,7 @@ function Game() {
   const [isXNext, setIsXNext] = useState(true);
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
-  const clan = winner === "X" ? "Zaibatsu" : "Yakuza";
+  const clan = winner === "X" ? "ZAIBATSU - X" : "YAKUZA - O";
 
   function Dark() {
     document.querySelector("body").classList.toggle("whiteMode");
@@ -99,6 +91,17 @@ function Game() {
     );
   }
 
+  function Square({ value, onClick }) {
+    return (
+      <button
+        className={value === "$" ? "square winRow" : "square"}
+        onClick={onClick}
+      >
+        {value}
+      </button>
+    );
+  }
+
   function renderSquare(i) {
     return (
       <Square
@@ -110,7 +113,6 @@ function Game() {
           const nextSquares = squares.slice();
           nextSquares[i] = nextSymbol;
           setSquares(nextSquares);
-
           setIsXNext(!isXNext); // toggle turns
         }}
       />
@@ -201,7 +203,12 @@ function calculateWinner(squares) {
       squares[a] === squares[c] &&
       squares[c] === squares[d]
     ) {
-      return squares[a];
+      let winner = squares[a];
+      squares[a] = "$";
+      squares[b] = "$";
+      squares[c] = "$";
+      squares[d] = "$";
+      return winner;
     }
   }
   return null;

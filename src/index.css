@@ -108,6 +108,11 @@ body.whiteMode {
   background: rgba(90, 0, 0, 0.7);
 }
 
+.winRow {
+  color: rgba(40, 180, 40, 1);
+  text-shadow: 0 0 15px rgba(40, 180, 40, 0.5);
+}
+
 .container {
   display: flex;
   align-items: center;
