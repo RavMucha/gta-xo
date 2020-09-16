@@ -110,7 +110,11 @@ body.whiteMode {
 
 .winRow {
   color: rgba(40, 180, 40, 1);
-  text-shadow: 0 0 15px rgba(40, 180, 40, 0.5);
+  text-shadow: 1px 0 0 rgb(0, 110, 0), -1px 0 0 rgb(0, 110, 0),
+    0 1px 0 rgb(0, 110, 0), 0 -1px 0 rgb(53, 238, 53), 1px 1px rgb(0, 110, 0),
+    -1px -1px 0 rgb(53, 238, 53), 1px -1px 0 rgb(53, 238, 53),
+    -1px 1px 0 rgb(0, 110, 0), 0 0 10px rgba(90, 0, 0, 0.7),
+    0 0 30px rgba(53, 238, 53, 0.5);
 }
 
 .container {
