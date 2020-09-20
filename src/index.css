@@ -10,7 +10,7 @@ body {
   background: #111;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 99vh;
 }
 
 .whiteMode {
@@ -28,21 +28,6 @@ body.whiteMode {
   );
   background-attachment: scroll;
   opacity: 0.9;
-}
-
-#cop.whiteMode {
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  animation: bounce 1s infinite;
-  opacity: 0.01;
-}
-
-.game-score.whiteMode {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .board-row:after {
