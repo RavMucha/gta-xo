@@ -149,19 +149,17 @@ body.whiteMode {
 
 .z {
   color: #ebc800;
-  font-size: 1.1rem;
   float: left;
   margin: 0 4px;
   text-shadow: 1px 0 0 #9b8400;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 .y {
   color: #6085ff;
-  font-size: 1.1rem;
   float: right;
   margin: 0 4px;
   text-shadow: 1px 0 0 #4863bb;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .game-score {
