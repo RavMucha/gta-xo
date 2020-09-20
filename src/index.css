@@ -26,7 +26,7 @@ body.whiteMode {
     rgba(205, 205, 205, 0.9) 95%,
     rgba(180, 180, 180, 0.9) 100%
   );
-  background-attachment: fixed;
+  background-attachment: scroll;
   opacity: 0.9;
 }
 
