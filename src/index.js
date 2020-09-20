@@ -28,6 +28,8 @@ function Cop() {
 function Game() {
   const [squares, setSquares] = useState(Array(16).fill(null));
   const [isXNext, setIsXNext] = useState(true);
+  const [scoreX, setScoreX] = useState(0);
+  const [scoreY, setScoreY] = useState(0);
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
   const clan = winner === "X" ? "ZAIBATSU - X" : "YAKUZA - O";
@@ -55,7 +57,7 @@ function Game() {
           Contact Me
         </a>
         <div>{renderRestartButton()}</div>
-        <div className="game-info">{getStatus()}</div>
+        <div className="game-info">{GetStatus()}</div>
       </div>
     );
   }
@@ -69,6 +71,15 @@ function Game() {
     );
   }
 
+  function Score() {
+    return (
+      <div className="game-score">
+        <span className="z">&#437;&nbsp;-&nbsp;{scoreX}</span>
+        <span className="y">&#65509;&nbsp;-&nbsp;{scoreY}</span>
+      </div>
+    );
+  }
+
   function renderRestartButton() {
     return (
       <Restart
@@ -76,6 +87,11 @@ function Game() {
         onClick={() => {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
+          if (winner === "X") {
+            setScoreX(scoreX + 1);
+          } else {
+            setScoreY(scoreY + 1);
+          }
           playSound(startAudio);
           document.getElementById("cop").style.opacity = 0.01;
         }}
@@ -119,7 +135,7 @@ function Game() {
     );
   }
 
-  function getStatus() {
+  function GetStatus() {
     if (winner) {
       playSound(winAudio);
       return (
@@ -142,6 +158,38 @@ function Game() {
         ? "Next player: ZAIBATSU - X"
         : "Next player: YAKUZA - O";
     }
+  }
+
+  function calculateWinner(squares) {
+    const possibleLines = [
+      [0, 1, 2, 3],
+      [4, 5, 6, 7],
+      [8, 9, 10, 11],
+      [12, 13, 14, 15],
+      [0, 5, 10, 15],
+      [0, 4, 8, 12],
+      [1, 5, 9, 13],
+      [2, 6, 10, 14],
+      [3, 7, 11, 15],
+      [3, 6, 9, 12],
+    ];
+    for (let i = 0; i < possibleLines.length; i++) {
+      const [a, b, c, d] = possibleLines[i];
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c] &&
+        squares[c] === squares[d]
+      ) {
+        let winner = squares[a];
+        squares[a] = "$";
+        squares[b] = "$";
+        squares[c] = "$";
+        squares[d] = "$";
+        return winner;
+      }
+    }
+    return null;
   }
 
   return (
@@ -174,6 +222,7 @@ function Game() {
             {renderSquare(15)}
           </div>
         </div>
+        <Score></Score>
       </div>
       <Cop></Cop>
     </div>
@@ -181,38 +230,6 @@ function Game() {
 }
 
 ReactDOM.render(<Game />, document.getElementById("root"));
-
-function calculateWinner(squares) {
-  const possibleLines = [
-    [0, 1, 2, 3],
-    [4, 5, 6, 7],
-    [8, 9, 10, 11],
-    [12, 13, 14, 15],
-    [0, 5, 10, 15],
-    [0, 4, 8, 12],
-    [1, 5, 9, 13],
-    [2, 6, 10, 14],
-    [3, 7, 11, 15],
-    [3, 6, 9, 12],
-  ];
-  for (let i = 0; i < possibleLines.length; i++) {
-    const [a, b, c, d] = possibleLines[i];
-    if (
-      squares[a] &&
-      squares[a] === squares[b] &&
-      squares[a] === squares[c] &&
-      squares[c] === squares[d]
-    ) {
-      let winner = squares[a];
-      squares[a] = "$";
-      squares[b] = "$";
-      squares[c] = "$";
-      squares[d] = "$";
-      return winner;
-    }
-  }
-  return null;
-}
 
 function isBoardFull(squares) {
   for (let i = 0; i < squares.length; i++) {
