@@ -149,7 +149,6 @@ body.whiteMode {
 
 .z {
   color: #ebc800;
-  float: left;
   margin: 1px 4px;
   font-size: 14px;
   text-shadow: 1px 0 0 #9b8400;
@@ -157,7 +156,6 @@ body.whiteMode {
 }
 .y {
   color: #6085ff;
-  float: right;
   font-size: 14px;
   margin: 1px 4px;
   text-shadow: 1px 0 0 #4863bb;
@@ -168,7 +166,7 @@ body.whiteMode {
   padding: 0;
   margin: 0;
   width: 140px;
-  height: 16px;
+  display: flex;
   color: rgb(19, 12, 0);
   justify-content: space-between;
   user-select: none;
