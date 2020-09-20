@@ -74,8 +74,8 @@ function Game() {
   function Score() {
     return (
       <div className="game-score">
-        <span className="z">&#437;&nbsp;-&nbsp;{scoreX}</span>
-        <span className="y">&#65509;&nbsp;-&nbsp;{scoreY}</span>
+        <b className="z">&#437;&nbsp;-&nbsp;{scoreX}</b>
+        <b className="y">&#65509;&nbsp;-&nbsp;{scoreY}</b>
       </div>
     );
   }
