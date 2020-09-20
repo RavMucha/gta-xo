@@ -28,8 +28,8 @@ function Cop() {
 function Game() {
   const [squares, setSquares] = useState(Array(16).fill(null));
   const [isXNext, setIsXNext] = useState(true);
-  const [scoreX, setScoreX] = useState(0);
-  const [scoreY, setScoreY] = useState(0);
+  let [scoreX, setScoreX] = useState(0);
+  let [scoreY, setScoreY] = useState(0);
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
   const clan = winner === "X" ? "ZAIBATSU - X" : "YAKUZA - O";
@@ -88,9 +88,9 @@ function Game() {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
           if (winner === "X") {
-            setScoreX(scoreX + 1);
+            setScoreX(scoreX);
           } else {
-            setScoreY(scoreY + 1);
+            setScoreY(scoreY);
           }
           playSound(startAudio);
           document.getElementById("cop").style.opacity = 0.01;
@@ -182,6 +182,11 @@ function Game() {
         squares[c] === squares[d]
       ) {
         let winner = squares[a];
+        if (winner === "X") {
+          scoreX += 1;
+        } else {
+          scoreY += 1;
+        }
         squares[a] = "$";
         squares[b] = "$";
         squares[c] = "$";
