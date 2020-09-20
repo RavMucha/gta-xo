@@ -17,7 +17,7 @@ body {
   filter: invert(100%) hue-rotate(180deg);
 }
 
-body.whiteMode {
+/* body.whiteMode {
   background: #e9e9e9;
   background: radial-gradient(
     circle,
@@ -28,7 +28,7 @@ body.whiteMode {
   );
   background-attachment: scroll;
   opacity: 0.9;
-}
+} */
 
 .board-row:after {
   display: table;
