@@ -153,6 +153,7 @@ body.whiteMode {
   float: left;
   margin: 1px 5px;
   text-shadow: 1px 0 0 #9b8400;
+  vertical-align: middle;
 }
 .y {
   color: #6085ff;
@@ -160,6 +161,7 @@ body.whiteMode {
   float: right;
   margin: 1px 5px;
   text-shadow: 1px 0 0 #4863bb;
+  vertical-align: middle;
 }
 
 .game-score {
