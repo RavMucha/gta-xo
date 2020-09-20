@@ -151,7 +151,7 @@ body.whiteMode {
   color: #ebc800;
   font-size: 1.1rem;
   float: left;
-  margin: 1px 5px;
+  margin: 0 4px;
   text-shadow: 1px 0 0 #9b8400;
   vertical-align: middle;
 }
@@ -159,7 +159,7 @@ body.whiteMode {
   color: #6085ff;
   font-size: 1.1rem;
   float: right;
-  margin: 1px 5px;
+  margin: 0 4px;
   text-shadow: 1px 0 0 #4863bb;
   vertical-align: middle;
 }
