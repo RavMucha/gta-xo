@@ -150,25 +150,25 @@ body.whiteMode {
 .z {
   color: #ebc800;
   float: left;
-  margin: 0 4px;
+  margin: 1px 4px;
   font-size: 14px;
   text-shadow: 1px 0 0 #9b8400;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 .y {
   color: #6085ff;
   float: right;
   font-size: 14px;
-  margin: 0 4px;
+  margin: 1px 4px;
   text-shadow: 1px 0 0 #4863bb;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 .game-score {
   padding: 0;
   margin: 0;
   width: 140px;
-  height: 15px;
+  height: 16px;
   color: rgb(19, 12, 0);
   justify-content: space-between;
   user-select: none;
