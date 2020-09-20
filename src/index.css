@@ -149,7 +149,7 @@ body.whiteMode {
 
 .z {
   color: #ebc800;
-  margin: 1px 6px 1px 4px;
+  margin: 2px;
   font-size: 14px;
   text-shadow: 1px 0 0 #9b8400;
   vertical-align: top;
@@ -157,7 +157,7 @@ body.whiteMode {
 .y {
   color: #6085ff;
   font-size: 14px;
-  margin: 1px 4px 1px 6px;
+  margin: 2px;
   text-shadow: 1px 0 0 #4863bb;
   vertical-align: top;
 }
@@ -165,13 +165,13 @@ body.whiteMode {
 .game-score {
   padding: 0;
   margin: 0;
-  width: 120px;
-  display: flex;
+  width: 60px;
   color: rgb(19, 12, 0);
-  justify-content: space-between;
   user-select: none;
   overflow: hidden;
   position: fixed;
+  display: flex;
+  flex-direction: column;
   user-select: none;
   bottom: 0;
   left: 0;
