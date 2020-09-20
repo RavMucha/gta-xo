@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-/* .whiteMode {
+.whiteMode {
   filter: invert(100%) hue-rotate(180deg);
 }
 
@@ -28,7 +28,7 @@ body.whiteMode {
   );
   background-attachment: fixed;
   opacity: 0.9;
-} */
+}
 
 .board-row:after {
   display: table;
