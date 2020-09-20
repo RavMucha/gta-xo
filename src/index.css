@@ -3,10 +3,6 @@
   src: url("./BankGothic Regular.ttf") format("truetype");
 }
 
-:root {
-  --def-width: calc(100vh);
-}
-
 body {
   font-family: "BankGothic Regular", Futura, sans-serif;
   font-size: 14px;
@@ -14,7 +10,7 @@ body {
   background: #111;
   display: flex;
   justify-content: center;
-  height: var(--def-width);
+  height: 100vh;
 }
 
 .whiteMode {
@@ -131,7 +127,6 @@ body.whiteMode {
 .game {
   display: flex;
   flex-direction: column;
-  height: var(--def-width);
 }
 
 .topnav {
@@ -160,7 +155,7 @@ body.whiteMode {
   text-shadow: 1px 0 0 #9b8400;
 }
 .y {
-  color:#6085ff;
+  color: #6085ff;
   font-size: 1.1rem;
   float: right;
   margin: 1px 5px;
