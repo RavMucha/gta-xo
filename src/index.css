@@ -3,6 +3,12 @@
   src: url("./BankGothic Regular.ttf") format("truetype");
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
 body {
   font-family: "BankGothic Regular", Futura, sans-serif;
   font-size: 14px;
