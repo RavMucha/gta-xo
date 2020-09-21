@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c38ece57.chunk.css",
-    "main.js": "/static/js/main.fbc3300f.chunk.js",
-    "main.js.map": "/static/js/main.fbc3300f.chunk.js.map",
+    "main.css": "/static/css/main.2480fa70.chunk.css",
+    "main.js": "/static/js/main.225afc26.chunk.js",
+    "main.js.map": "/static/js/main.225afc26.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cedb3877.js",
     "runtime-main.js.map": "/static/js/runtime-main.cedb3877.js.map",
     "static/js/2.c58ec597.chunk.js": "/static/js/2.c58ec597.chunk.js",
     "static/js/2.c58ec597.chunk.js.map": "/static/js/2.c58ec597.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e694d5c6d561945fdbda935a7ded59a.js": "/precache-manifest.4e694d5c6d561945fdbda935a7ded59a.js",
+    "precache-manifest.01137893c163c474bb68e8f092b48afe.js": "/precache-manifest.01137893c163c474bb68e8f092b48afe.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.c38ece57.chunk.css.map": "/static/css/main.c38ece57.chunk.css.map",
+    "static/css/main.2480fa70.chunk.css.map": "/static/css/main.2480fa70.chunk.css.map",
     "static/js/2.c58ec597.chunk.js.LICENSE.txt": "/static/js/2.c58ec597.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BankGothic Regular.7ba4f092.ttf",
     "static/media/GTA2_WASTED.mp3": "/static/media/GTA2_WASTED.e658420e.mp3",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.cedb3877.js",
     "static/js/2.c58ec597.chunk.js",
-    "static/css/main.c38ece57.chunk.css",
-    "static/js/main.fbc3300f.chunk.js"
+    "static/css/main.2480fa70.chunk.css",
+    "static/js/main.225afc26.chunk.js"
   ]
 }

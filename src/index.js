@@ -35,6 +35,7 @@ function Game() {
   const clan = winner === "X" ? "ZAIBATSU - X" : "YAKUZA - O";
 
   function Dark() {
+    document.querySelector("html").classList.toggle("whiteMode");
     document.querySelector("body").classList.toggle("whiteMode");
     document.getElementById("cop").classList.toggle("whiteMode");
     if (document.querySelector("body").classList.contains("whiteMode")) {
