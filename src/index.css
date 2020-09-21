@@ -153,6 +153,7 @@ body.whiteMode {
   font-size: 14px;
   text-shadow: 1px 0 0 #9b8400;
   vertical-align: top;
+  text-align: left;
 }
 .y {
   color: #6085ff;
@@ -160,6 +161,11 @@ body.whiteMode {
   margin: 2px;
   text-shadow: 1px 0 0 #4863bb;
   vertical-align: top;
+  text-align: left;
+}
+
+#yen {
+  font-size: 0.9em;
 }
 
 .game-score {
