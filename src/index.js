@@ -228,8 +228,8 @@ function Game() {
             {renderSquare(15)}
           </div>
         </div>
-        <Score></Score>
       </div>
+      <Score></Score>
       <Cop></Cop>
     </div>
   );
