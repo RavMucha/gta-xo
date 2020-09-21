@@ -126,6 +126,7 @@ body.whiteMode {
 }
 
 .container {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
