@@ -50,7 +50,7 @@ function Game() {
           &#9775;
         </abbr>
         <a
-          href="https://rafal-mucha.online/"
+          href="https://rafalmucha.online"
           target="_blank"
           rel="noopener noreferrer"
         >
