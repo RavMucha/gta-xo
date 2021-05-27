@@ -5,8 +5,8 @@
   "scope": "/",
   "start_url": "/index.html",
   "short_name": "GTA-XO",
-  "name": "GTA TicTacToe Game",
-  "app_name": "GTA TicTacToe",
+  "name": "Grand TicTacToe",
+  "app_name": "Grand TicTacToe",
   "description": "A GTA themed TicTacToe Game",
   "icons": [
     {
