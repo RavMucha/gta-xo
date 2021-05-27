@@ -7,7 +7,10 @@ import start from "./Assets/Gta2_Respect.mp3";
 import win from "./Assets/Gta2_Frenzy.mp3";
 import draw from "./Assets/GTA2_WASTED.mp3";
 import molotov from "./Assets/GTA2_molotov.mp3";
+import * as serviceWorker from './serviceWorker';
 import "./index.css";
+
+serviceWorker.register();
 
 const startAudio = new Audio(start);
 const winAudio = new Audio(win);
