@@ -199,10 +199,9 @@ body.whiteMode {
 .game-info {
   overflow: auto;
   font-size: 18px;
-  margin: 14px 2px;
+  margin: 14px auto;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: calc(50% - 104px);
   color: rgb(255, 171, 0);
   text-align: center;
   user-select: none;
@@ -236,7 +235,7 @@ abbr:hover {
   color: black;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .lgo {
     margin: 3px;
     height: 16px;
@@ -246,8 +245,7 @@ abbr:hover {
     font-size: 12px;
     margin: 5px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 85px);
     color: rgb(255, 108, 10);
   }
 

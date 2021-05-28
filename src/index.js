@@ -143,17 +143,19 @@ function Game() {
     if (winner) {
       playSound(winAudio);
       return (
+        <>
         <div>
           Winner: {clan}
-          <Frenzy></Frenzy>
         </div>
+        <Frenzy></Frenzy>
+        </>
       );
     } else if (isBoardFull(squares)) {
       playSound(drawAudio);
       document.getElementById("cop").style.opacity = 0.9;
       return (
         <div>
-          <b>Draw!</b>{" "}
+          <b>It`s a draw!</b>{" "}
           <span style={{ fontSize: "0.9em" }}>&nbsp;Play again &#187;</span>
         </div>
       );
