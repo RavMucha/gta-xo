@@ -156,18 +156,26 @@ body.whiteMode {
   height: 25px;
 }
 
+.Reset {
+  color: #f2f2f2;
+  background-color: #ae2830;
+  font-family: "BankGothic Regular", Futura, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
 .z {
   color: #ebc800;
-  margin: 2px;
-  font-size: 14px;
+  margin: 2px 8px;
+  font-size: 15px;
   text-shadow: 1px 0 0 #9b8400;
   vertical-align: top;
   text-align: left;
 }
 .y {
   color: #6085ff;
-  font-size: 14px;
-  margin: 2px;
+  font-size: 15px;
+  margin: 2px 8px;
   text-shadow: 1px 0 0 #4863bb;
   vertical-align: top;
   text-align: left;
@@ -180,7 +188,8 @@ body.whiteMode {
 .game-score {
   padding: 0;
   margin: 0;
-  width: 60px;
+  width: 70px;
+  height: 80px;
   color: rgb(19, 12, 0);
   user-select: none;
   overflow: hidden;
@@ -270,7 +279,8 @@ abbr:hover {
   }
 
   .game-score {
-    width: 80px;
+    width: 96px;
+    height: 92px;
   }
   .y,
   .z {
@@ -316,9 +326,13 @@ abbr:hover {
     width: 80px;
   }
 
+  .Reset {
+    font-size: 18px;
+  }
+
   .game-score {
-    width: 90px;
-    height: 80px;
+    width: 110px;
+    height: 100px;
   }
   .y,
   .z {

@@ -7,7 +7,7 @@ import start from "./Assets/Gta2_Respect.mp3";
 import win from "./Assets/Gta2_Frenzy.mp3";
 import draw from "./Assets/GTA2_WASTED.mp3";
 import molotov from "./Assets/GTA2_molotov.mp3";
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 
 serviceWorker.register();
@@ -31,8 +31,8 @@ function Cop() {
 function Game() {
   const [squares, setSquares] = useState(Array(16).fill(null));
   const [isXNext, setIsXNext] = useState(true);
-  let [scoreX, setScoreX] = useState(0);
-  let [scoreY, setScoreY] = useState(0);
+  let [scoreX, setScoreX] = useState(+localStorage.getItem("scoreX") || 0);
+  let [scoreY, setScoreY] = useState(+localStorage.getItem("scoreY") || 0);
   const nextSymbol = isXNext ? "X" : "O";
   const winner = calculateWinner(squares);
   const clan = winner === "X" ? "ZAIBATSU - X" : "YAKUZA - O";
@@ -43,6 +43,14 @@ function Game() {
     if (document.querySelector("body").classList.contains("whiteMode")) {
       playSound(whiteAudio);
     }
+  }
+
+  function memoClear() {
+    localStorage.setItem("scoreX", 0);
+    localStorage.setItem("scoreY", 0);
+    setScoreX(0);
+    setScoreY(0);
+    window.location.reload();
   }
 
   function Nav() {
@@ -57,7 +65,7 @@ function Game() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Contact Me
+          Contact
         </a>
         <div>{renderRestartButton()}</div>
         <div className="game-info">{GetStatus()}</div>
@@ -77,9 +85,14 @@ function Game() {
   function Score() {
     return (
       <div className="game-score">
+        <button className="Reset" onClick={memoClear}>
+          Reset
+        </button>
         <b className="z">&nbsp;Z &ndash;&nbsp;{scoreX}</b>
-        <br/>
-        <b className="y">&nbsp;<b id="yen">&#165;</b> &ndash;&nbsp;{scoreY}</b>
+        <br />
+        <b className="y">
+          &nbsp;<b id="yen">&#165;</b> &ndash;&nbsp;{scoreY}
+        </b>
       </div>
     );
   }
@@ -92,8 +105,10 @@ function Game() {
           setSquares(Array(16).fill(null));
           setIsXNext(true);
           if (winner === "X") {
+            localStorage.setItem("scoreX", JSON.stringify(scoreX));
             setScoreX(scoreX);
           } else {
+            localStorage.setItem("scoreY", JSON.stringify(scoreY));
             setScoreY(scoreY);
           }
           playSound(startAudio);
@@ -144,10 +159,8 @@ function Game() {
       playSound(winAudio);
       return (
         <>
-        <div>
-          Winner: {clan}
-        </div>
-        <Frenzy></Frenzy>
+          <div>Winner: {clan}</div>
+          <Frenzy></Frenzy>
         </>
       );
     } else if (isBoardFull(squares)) {
@@ -190,8 +203,10 @@ function Game() {
         let winner = squares[a];
         if (winner === "X") {
           scoreX += 1;
-        } else {
+          scoreY += 0;
+        } else if (winner === "Y") {
           scoreY += 1;
+          scoreX += 0;
         }
         squares[a] = "$";
         squares[b] = "$";
