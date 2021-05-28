@@ -40,6 +40,7 @@ function Game() {
   function Dark() {
     document.querySelector("body").classList.toggle("whiteMode");
     document.getElementById("cop").classList.toggle("whiteMode");
+    document.querySelector(".Reset").classList.toggle("whiteMode");
     if (document.querySelector("body").classList.contains("whiteMode")) {
       playSound(whiteAudio);
     }
@@ -112,7 +113,7 @@ function Game() {
             setScoreY(scoreY);
           }
           playSound(startAudio);
-          document.getElementById("cop").style.opacity = 0.01;
+          document.getElementById("cop").style.opacity = 0;
         }}
       />
     );
