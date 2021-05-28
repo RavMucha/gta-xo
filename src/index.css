@@ -293,7 +293,6 @@ abbr:hover {
     text-align: left;
     max-width: 90px;
     position: static;
-    transform: translateX(0);
   }
 
   .topnav a,
