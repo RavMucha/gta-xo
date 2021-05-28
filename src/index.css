@@ -127,7 +127,8 @@ body.whiteMode {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  vertical-align: middle;
+  margin-top: 10vh;
 }
 
 .game {
