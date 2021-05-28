@@ -204,7 +204,7 @@ function Game() {
         if (winner === "X") {
           scoreX += 1;
           scoreY += 0;
-        } else if (winner === "Y") {
+        } else {
           scoreY += 1;
           scoreX += 0;
         }
