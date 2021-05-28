@@ -58,7 +58,7 @@ body.whiteMode {
   bottom: 5px;
   right: 5px;
   animation: bounce 1s infinite;
-  opacity: 0.01;
+  opacity: 0;
 }
 
 @keyframes pop {
