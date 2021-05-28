@@ -48,8 +48,8 @@ function Game() {
   function memoClear() {
     localStorage.setItem("scoreX", 0);
     localStorage.setItem("scoreY", 0);
-    setScoreX(0);
-    setScoreY(0);
+    scoreX = 0;
+    scoreY = 0;
     window.location.reload();
   }
 
