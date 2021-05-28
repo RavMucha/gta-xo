@@ -263,6 +263,14 @@ abbr:hover {
     height: 100px;
     width: 100px;
   }
+
+  .game-score {
+    width: 80px;
+  }
+  .y,
+  .z {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 790px) {
