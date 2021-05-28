@@ -148,7 +148,9 @@ body.whiteMode {
 }
 
 .lgo {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 10px;
   height: 25px;
 }
@@ -196,9 +198,11 @@ body.whiteMode {
 
 .game-info {
   overflow: auto;
-  font-size: 20px;
-  padding: 0 0 0 65px;
-  margin: 10px;
+  font-size: 18px;
+  margin: 14px 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: rgb(255, 171, 0);
   text-align: center;
   user-select: none;
@@ -235,13 +239,15 @@ abbr:hover {
 @media only screen and (max-width: 900px) {
   .lgo {
     margin: 3px;
-    height: 15px;
+    height: 16px;
   }
 
   .game-info {
     font-size: 12px;
     margin: 5px;
-    padding: 0 0 0 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: rgb(255, 108, 10);
   }
 
@@ -288,6 +294,8 @@ abbr:hover {
     padding: 0;
     text-align: left;
     max-width: 90px;
+    position: static;
+    transform: translateX(0);
   }
 
   .topnav a,
